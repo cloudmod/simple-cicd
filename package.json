@@ -1,0 +1,35 @@
+{
+  "name": "@cloudmod/simple-cicd",
+  "version": "0.1.4",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "nodeunit test/test.*.js"
+  },
+  "devDependencies": {
+    "@types/nodeunit": "^0.0.30",
+    "nodeunit": "^0.11.2",
+    "typescript": "^3.3.3333"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "^1.0.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudformation": "^1.0.0",
+    "@aws-cdk/aws-codebuild": "^1.0.0",
+    "@aws-cdk/aws-codecommit": "^1.0.0",
+    "@aws-cdk/aws-codepipeline": "^1.0.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.0.0",
+    "@aws-cdk/aws-s3": "^1.0.0",
+    "@aws-cdk/aws-secretsmanager": "^1.0.0",
+    "@aws-cdk/aws-sns": "^1.0.0",
+    "@aws-cdk/aws-sns-subscriptions": "^1.0.0",
+    "@aws-cdk/aws-sqs": "^1.0.0",
+    "@aws-cdk/core": "^1.0.0",
+    "@types/shortid": "0.0.29",
+    "shortid": "^2.2.14"
+  }
+}
